@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover football, basketball and baseball jerseys at Jersey Hub. Your game, your jersey.">
+    <title>JERSEY HUB — Your Game. Your Jersey.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="announcement">
+        BUILT FOR THE LOVE OF THE GAME
+        <span>FOOTBALL FIRST. ALWAYS.</span>
+    </div>
+
+    <header class="site-header">
+        <a href="#" class="logo">JERSEY HUB<span>.</span></a>
+
+        <nav class="main-nav">
+            <a href="#football" class="active">Football</a>
+            <a href="#basketball">Basketball</a>
+            <a href="#baseball">Baseball</a>
+            <a href="#collections">Collections</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="searchButton" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="m16 16 5 5"></path>
+                </svg>
+            </button>
+
+            <div class="search-box" id="searchBox" hidden>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search jerseys..."
+                    aria-label="Search jerseys"
+                >
+            </div>
+
+            <a href="#featured" class="bag-link">
+                BAG <span id="cartCount">0</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="football">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">FOR THE LOVE OF THE GAME</p>
+                <h1>WEAR YOUR<br><span>LOYALTY.</span></h1>
+
+                <p class="hero-description">
+                    From matchday classics to your next favourite kit.
+                    Find the jersey that speaks your language.
+                </p>
+
+                <a href="#featured" class="primary-button">
+                    SHOP FOOTBALL <span>↗</span>
+                </a>
+
+                <div class="hero-bottom-note">
+                    <span>01 / FOOTBALL CULTURE</span>
+                    <span>YOUR GAME. YOUR RULES.</span>
+                </div>
+            </div>
+
+            <div class="hero-side-label">
+              JERSEY CULTURE — EST. FOR FANS
+            </div>
+        </section>
+
+        <section class="category-strip" id="collections">
+            <div class="section-heading">
+                <p class="eyebrow">PICK YOUR GAME</p>
+                <h2>THE WORLD <span>OF SPORT.</span></h2>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#club-collection" class="category-card football-card">
+                    <div class="category-image football-category-image"></div>
+                    <div class="category-content">
+                        <span>01 / THE MAIN EVENT</span>
+                        <h3>FOOTBALL</h3>
+                        <p>CLUBS. COUNTRIES. CULTURE.</p>
+                        <span class="category-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a href="#basketball" class="category-card basketball-card">
+                    <div class="category-image basketball-category-image"></div>
+                    <div class="category-content">
+                        <span>02 / OWN THE COURT</span>
+                        <h3>BASKETBALL</h3>
+                        <p>BUILT FOR THE COURT.</p>
+                        <span class="category-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a href="#baseball" class="category-card baseball-card">
+                    <div class="category-image baseball-category-image"></div>
+                    <div class="category-content">
+                        <span>03 / STEP UP TO BAT</span>
+                        <h3>BASEBALL</h3>
+                        <p>A DIFFERENT KIND OF GAME.</p>
+                        <span class="category-arrow">↗</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="featured-section" id="featured">
+            <div class="featured-heading">
+                <div>
+                    <p class="eyebrow">THE CROWD FAVOURITES</p>
+                    <h2>MADE FOR <span>MATCHDAY.</span></h2>
+                </div>
+                <a href="#football" class="text-link">EXPLORE FOOTBALL ↗</a>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <a href="#club-collection" class="product-image product-one">
+                        <span class="product-label">FOOTBALL</span>
+                        <span class="product-heart">♡</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Club Jersey</h3>
+                            <p>Club Collection</p>
+                        </div>
+                        <span class="product-price">View Collection</span>
+                    </div>
+                    <p class="product-note">Explore jerseys from your favourite clubs.</p>
+                    <button class="add-to-bag" type="button">
+    ADD TO BAG +
+</button>
+                </article>
+
+                <article class="product-card">
+                    <a href="#country-collection" class="product-image product-two">
+                        <span class="product-label">FOOTBALL</span>
+                        <span class="product-heart">♡</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>National Team Jersey</h3>
+                            <p>National Collection</p>
+                        </div>
+                        <span class="product-price">View Collection</span>
+                    </div>
+                    <p class="product-note">Explore jerseys from your favourite national teams.</p>
+                    <button class="add-to-bag" type="button">
+    ADD TO BAG +
+</button>
+                </article>
+
+                <article class="product-card">
+                    <a href="#basketball" class="product-image product-three">
+                        <span class="product-label">BASKETBALL</span>
+                        <span class="product-heart">♡</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Basketball Edition</h3>
+                            <p>Court Collection</p>
+                        </div>
+                        <span class="product-price">View Collection</span>
+                    </div>
+                    <p class="product-note">Explore basketball jerseys and styles.</p>
+                    <button class="add-to-bag" type="button">
+    ADD TO BAG +
+</button>
+                </article>
+
+                <article class="product-card">
+                    <a href="#baseball" class="product-image product-four">
+                        <span class="product-label">BASEBALL</span>
+                        <span class="product-heart">♡</span>
+                    </a>
+                    <div class="product-info">
+                        <div>
+                            <h3>Baseball Classic</h3>
+                            <p>Street Collection</p>
+                        </div>
+                        <span class="product-price">View Collection</span>
+                    </div>
+                    <p class="product-note">Explore baseball jerseys and styles.</p>
+                    <button class="add-to-bag" type="button">
+    ADD TO BAG +
+</button>
+                </article>
+
+            </div>
+        </section>
+        
+   
+
+<!-- Club Jersey Collection -->
+<section class="jersey-collection" id="club-collection">
+    <div class="featured-heading">
+        <div>
+            <p class="eyebrow">THE CLUB COLLECTION</p>
+            <h2>REP YOUR <span>CLUB.</span></h2>
+        </div>
+        <a href="#featured" class="text-link">BACK TO COLLECTIONS ↑</a>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- Real Madrid -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="RealmadridHome.webp"
+                     alt="Real Madrid home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Real Madrid Home Jersey</h3>
+                    <p>Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Barcelona -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="BarcelonaHOME.webp"
+                     alt="Barcelona home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Barcelona Home Jersey</h3>
+                    <p>Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Manchester United -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="ManchesterHome.jpeg"
+                     alt="Manchester United home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Manchester United Home Jersey</h3>
+                    <p>Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- Country Collection -->
+<section class="jersey-collection" id="country-collection">
+    <div class="featured-heading">
+        <div>
+            <p class="eyebrow">THE NATIONAL TEAM COLLECTION</p>
+            <h2>REP YOUR <span>COUNTRY.</span></h2>
+        </div>
+        <a href="#featured" class="text-link">BACK TO COLLECTIONS ↑</a>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- Argentina -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="ArgentinaHome.jpeg"
+                     alt="Argentina home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Argentina Home Jersey</h3>
+                    <p>National Team · Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Brazil -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="BrazilHome.jpeg"
+                     alt="Brazil home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Brazil Home Jersey</h3>
+                    <p>National Team · Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Portugal -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="PortugalHome.jpeg"
+                     alt="Portugal home jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">FOOTBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Portugal Home Jersey</h3>
+                    <p>National Team · Home Kit</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+    </div>
+</section>
+
+        
+<!-- Shopping Cart Side Panel -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+        <div>
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h2>YOUR BAG <span id="cartPanelCount">0</span></h2>
+        </div>
+
+        <button
+            class="cart-close"
+            id="cartClose"
+            type="button"
+            aria-label="Close shopping bag"
+        >
+            &times;
+        </button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your bag is waiting for greatness.</p>
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total">
+            <span>SUBTOTAL</span>
+            <strong id="cartSubtotal">₹0</strong>
+        </div>
+
+        <button class="cart-checkout" type="button" disabled>
+            CHECKOUT — COMING SOON
+        </button>
+
+        <p class="cart-note">Shipping and payment details coming soon.</p>
+    </div>
+</aside>
+
+
+        <section class="statement-section">
+            <p class="eyebrow">MORE THAN A JERSEY</p>
+            <h2>IT'S NOT JUST<br>A GAME. <span>IT'S YOURS.</span></h2>
+            <a href="#collections" class="primary-button">
+                FIND YOUR GAME <span>↗</span>
+            </a>
+        </section>
+
+        
+<!-- Basketball Jersey Collection -->
+<section class="jersey-collection" id="basketball">
+    <div class="featured-heading">
+        <div>
+            <p class="eyebrow">THE BASKETBALL COLLECTION</p>
+            <h2>OWN THE <span>COURT.</span></h2>
+        </div>
+        <a href="#featured" class="text-link">BACK TO COLLECTIONS ↑</a>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- Lakers -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="Lakers Jersey.jpeg"
+                     alt="Los Angeles Lakers basketball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASKETBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Lakers Jersey</h3>
+                    <p>Los Angeles Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Chicago Bulls -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="Chicago Bulls Jersey.jpeg"
+                     alt="Chicago Bulls basketball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASKETBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Chicago Bulls Jersey</h3>
+                    <p>Chicago Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Warriors -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="Warriors Jersey.jpeg"
+                     alt="Golden State Warriors basketball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASKETBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Warriors Jersey</h3>
+                    <p>Golden State Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+    </div>
+</section>
+
+
+        
+<!-- Baseball Jersey Collection -->
+<section class="jersey-collection baseball-section" id="baseball">
+    <div class="featured-heading">
+        <div>
+            <p class="eyebrow">THE BASEBALL COLLECTION</p>
+            <h2>STEP UP <span>TO BAT.</span></h2>
+        </div>
+        <a href="#featured" class="text-link">BACK TO COLLECTIONS ↑</a>
+    </div>
+
+    <div class="product-grid">
+
+        <!-- New York Yankees -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="Yankees Jersey.jpeg"
+                     alt="New York Yankees baseball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASEBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Yankees Jersey</h3>
+                    <p>New York Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Los Angeles Dodgers -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="Dodgers Jersey.jpeg"
+                     alt="Los Angeles Dodgers baseball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASEBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Dodgers Jersey</h3>
+                    <p>Los Angeles Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+        <!-- Boston Red Sox -->
+        <article class="product-card">
+            <div class="product-image">
+                <img src="RedSox Jersey.jpeg"
+                     alt="Boston Red Sox baseball jersey"
+                     style="width:100%; height:100%; object-fit:cover;">
+                <span class="product-label">BASEBALL</span>
+            </div>
+            <div class="product-info">
+                <div>
+                    <h3>Red Sox Jersey</h3>
+                    <p>Boston Edition</p>
+                </div>
+                <span class="product-price">Ask for Price</span>
+            </div>
+            <p class="product-note">Availability and sizes to be confirmed.</p>
+        </article>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <a href="#" class="logo">JERSEY HUB<span>.</span></a>
+            <p>YOUR GAME. YOUR JERSEY.</p>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 JERSEY HUB — DEMO PROJECT</span>
+            <a href="#collections">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
